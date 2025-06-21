@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Shooter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="info">
+        WASD - movement<br>
+        Мышь - mouse movement<br>
+        ЛКМ - shoot<br>
+        ESC - exit pointer lock<br>
+        Score: <span id="score">0</span><br>
+    </div>
+
+    <div id="crosshair"></div>
+    
+    <div id="damage-overlay"></div>
+
+    <div id="game-over">
+        <div id="game-over-content">
+            <h1>ИГРА ОКОНЧЕНА</h1>
+            <p>Финальный счет: <span id="final-score">0</span></p>
+            <p>Нажмите R для перезапуска</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/bullet.js"></script>
+    <script src="js/scene.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
